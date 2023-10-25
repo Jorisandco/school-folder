@@ -52,9 +52,9 @@
     font-family: "Comic Sans MS";
 }
 
-.information_div {
+/* .information_div {
 
-}
+} */
 
 .box{
     display: flex;
@@ -75,4 +75,9 @@ h1{
 .buttons{
     display: flex;
     justify-content: center;
+}
+
+.linkicon{
+    max-width: 75px;
+    height: auto;
 }
