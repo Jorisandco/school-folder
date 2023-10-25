@@ -1,0 +1,78 @@
+*{margin: 0; padding: 0; overflow: hidden;}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 100vh;
+    grid-template-areas:
+        "header header header header"
+        "header header header header"
+        "any-links-or-buttons any-links-or-buttons any-links-or-buttons any-links-or-buttons"
+        "student-information student-information skills skills"
+        "student-information student-information skills skills"
+        "images-learned-languages images-learned-languages skill-bars skill-bars"
+        "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.student-information {
+    grid-area: student-information;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgba(128, 128, 128, 0.441);
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.skill-bars {
+    grid-area: skill-bars;
+}
+
+.images-learned-languages {
+    grid-area: images-learned-languages;
+}
+
+.any-links-or-buttons {
+    grid-area: any-links-or-buttons;
+}
+
+.text {
+    color: white;
+    font-family: "Comic Sans MS";
+}
+
+.information_div {
+
+}
+
+.box{
+    display: flex;
+    border: 2px solid gray;
+    height: 100%;
+}
+/* header style */
+#header{
+    background-color: rgba(128, 128, 128, 0.441);
+    height: 100%;
+}
+
+h1{
+    font-size: 80px;
+}
+/* button(s) */
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
