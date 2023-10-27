@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 2px;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -9,7 +9,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.25fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-auto-columns: 1fr;
-    gap: 0px 0px;
+    gap: 10px 4px;
     grid-auto-flow: row;
     height: 100vh;
     grid-template-areas:
@@ -80,7 +80,7 @@ h1 {
 }
 
 .linkicon {
-    max-width: 75px;
+    max-width: 60px;
     height: auto;
 }
 
@@ -89,7 +89,7 @@ h1 {
     border: 2px solid rgb(119, 179, 119);
     height: 100%;
     width: 100%;
-    border-radius: 4.48686798423768427674263427%;
+    border-radius: 2.48686798423768427674263427%;
 }
 
 /* Make sure that padding behaves as expected */
@@ -178,10 +178,43 @@ h1 {
     cursor: pointer;
     font-size: 20px;
     transition: 0.6765736578326587326578s;
-    width: 100%;
+    width: 600px;
+    height: 100%;
+    border-radius: 1.8%;
   }
   
   /* Darker background on mouse-over */
   .btn:hover {
     background-color: rgb(65, 107, 45);
+  }
+
+  .footer > .box {
+    border-radius: 0;
+  }
+
+  @media  screen and (max-width: 420px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.25fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 10px 4px;
+        grid-auto-flow: row;
+        height: 100vh;
+        grid-template-areas:
+            "header header "
+            "header header "
+            "any-links-or-buttons any-links-or-buttons"
+            "student-information skills"
+            "student-information skills"
+            "skills2 skills2"
+            "footer footer";
+    }
+      .any-links-or-buttons > .box{
+        flex-direction: column;
+      }
+
+      .btn{
+        text-align: center;
+      }
   }
