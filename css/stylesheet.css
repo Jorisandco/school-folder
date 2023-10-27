@@ -168,3 +168,20 @@ h1 {
     align-items: center;
     width: 100%;
 }
+
+/* Style buttons */
+.btn {
+    background-color: rgb(104, 204, 81);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.6765736578326587326578s;
+    width: 100%;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: rgb(65, 107, 45);
+  }
