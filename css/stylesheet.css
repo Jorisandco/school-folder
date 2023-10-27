@@ -164,4 +164,7 @@ h1 {
 
 .skills2 > .box > .text_1Box {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
