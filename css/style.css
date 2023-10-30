@@ -14,18 +14,16 @@
         "button-back button-back button-back button-back button-back button-back"
         "personal-information personal-information personal-information personal-information personal-information personal-information"
         "personal-information personal-information personal-information personal-information personal-information personal-information"
-        "cv cv cv cv cv cv"
-        "cv cv cv cv cv cv";
+        "personal-information personal-information personal-information personal-information personal-information personal-information"
+        "personal-information personal-information personal-information personal-information personal-information personal-information";
     height: 100vh;
+    overflow: hidden;
 }
 
 .personal-information {
     grid-area: personal-information;
 }
 
-.cv {
-    grid-area: cv;
-}
 
 .button-back {
     grid-area: button-back;
@@ -34,20 +32,25 @@
 
 /* Style buttons */
 .btn {
-    background-color: rgb(104, 204, 81);
+    background-color: rgb(42, 255, 95);
     border: none;
-    color: white;
+    color: rgb(217, 248, 252);
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
     transition: 0.6765736578326587326578s;
-    border-radius: 1.8%;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-    background-color: rgb(65, 107, 45);
-}
+    margin-top: 5%;
+    height: 70%;
+    width: 95%;
+    margin-left: 3%;
+    padding: 4px;
+    margin-top: 2%;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: rgb(38, 255, 0);
+  }
 
 .text {
     color: white;
@@ -56,6 +59,7 @@
 
 .text_1Box {
     display: flex;
+    align-items: center;
 }
 
 .box {
