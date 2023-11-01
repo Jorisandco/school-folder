@@ -25,11 +25,13 @@
 
 .header {
     grid-area: header;
+    overflow: hidden;
 }
 
 .any-links-or-buttons {
     grid-area: any-links-or-buttons;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 
 .blackbar {
@@ -61,6 +63,7 @@
 .footer {
     grid-area: footer;
     background-color: rgba(46, 46, 46, 0.441);
+    overflow: hidden;
 }
 
 .skills {
@@ -74,7 +77,7 @@
 
 .text {
     color: white;
-    font-family: "Comic Sans MS";
+    font-family: "arial";
 }
 
 /* .information_div {
@@ -99,6 +102,7 @@ h1 {
     font-size: 75px;
     color: white;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* button(s) */
@@ -114,6 +118,7 @@ h1 {
 .linkicon {
     max-width: 60px;
     height: auto;
+    overflow: hidden;
 }
 
 .box {
@@ -133,6 +138,7 @@ h1 {
 .container_skilss {
     width: 100%;
     background-color: #ddd;
+    border: 4.38217421642168732684732px rgb(121, 121, 121) solid;
 }
 
 .skills_p {
@@ -144,25 +150,25 @@ h1 {
 
 .html {
     width: 60%;
-    background-color: rgb(124, 123, 123);
+    background-color: rgb(67, 149, 58);
     height: 10%;
 }
 
 .css {
     width: 50%;
-    background-color: rgb(124, 123, 123);
+    background-color: rgb(67, 149, 58);
     height: 20%;
 }
 
 .js {
     width: 5%;
-    background-color: rgb(124, 123, 123);
+    background-color: rgb(67, 149, 58);
     height: 10%;
 }
 
-.py {
-    width: 35%;
-    background-color: #808080;
+.Python {
+    width: 30%;
+    background-color: rgb(67, 149, 58);
     height: 10%;
 }
 
@@ -215,6 +221,8 @@ h1 {
     margin: 15px;
     padding: 4px;
     margin-top: 5%;
+    border: 2px rgb(121, 121, 121) solid;
+    border-radius: 4.7297219379821739281739128%;
 }
 
 /* Darker background on mouse-over */
@@ -225,6 +233,8 @@ h1 {
 .footer>.box {
     border-radius: 0;
 }
+
+
 
 @media screen and (max-width: 420px) {
     .container {
