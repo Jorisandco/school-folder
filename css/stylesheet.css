@@ -1,10 +1,45 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+.top_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "header header header header"
+        "any-links-or-buttons any-links-or-buttons any-links-or-buttons any-links-or-buttons"
+        "any-links-or-buttons any-links-or-buttons any-links-or-buttons any-links-or-buttons"
+        "any-links-or-buttons any-links-or-buttons any-links-or-buttons any-links-or-buttons"
+        "any-links-or-buttons any-links-or-buttons any-links-or-buttons any-links-or-buttons"
+        "blackbar blackbar blackbar blackbar";
+    height: 100vh;
     overflow: hidden;
 }
 
-.container {
+.header {
+    grid-area: header;
+}
+
+.any-links-or-buttons {
+    grid-area: any-links-or-buttons;
+    background-color: rgb(37, 37, 37);
+}
+
+.blackbar {
+    grid-area: blackbar;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+.bottom_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.25fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
@@ -13,36 +48,28 @@
     grid-auto-flow: row;
     height: 100vh;
     grid-template-areas:
-        "header header header header"
-        "header header header header"
-        "any-links-or-buttons any-links-or-buttons any-links-or-buttons any-links-or-buttons"
-        "student-information student-information skills skills"
-        "student-information student-information skills skills"
+        "skills skills skills skills"
+        "skills skills skills skills"
+        "skills skills skills skills"
+        "skills skills skills skills"
+        "skills skills skills skills"
         "skills2 skills2 skills2 skills2"
         "footer footer footer footer";
-}
-
-.header {
-    grid-area: header;
-}
-
-.student-information {
-    grid-area: student-information;
+    overflow-y: hidden;
 }
 
 .footer {
     grid-area: footer;
-    background-color: rgb(48, 98, 48, 0.441);
+    background-color: rgba(46, 46, 46, 0.441);
 }
 
 .skills {
     grid-area: skills;
 }
-.skills2{
+
+.skills2 {
     grid-area: skills2;
-}
-.any-links-or-buttons {
-    grid-area: any-links-or-buttons;
+    overflow: hidden;
 }
 
 .text {
@@ -56,7 +83,7 @@
 
 .footer>.box {
     display: flex;
-    border: 2px solid rgb(119, 179, 119);
+    border: 2px solid rgb(0, 0, 0);
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -69,7 +96,9 @@
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 75px;
+    color: white;
+    text-align: center;
 }
 
 /* button(s) */
@@ -77,6 +106,7 @@ h1 {
 .buttons {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -88,7 +118,7 @@ h1 {
 
 .box {
     display: flex;
-    border: 2px solid rgb(119, 179, 119);
+    border: 2px solid rgb(0, 0, 0);
     height: 100%;
     width: 100%;
     border-radius: 2.48686798423768427674263427%;
@@ -114,19 +144,19 @@ h1 {
 
 .html {
     width: 60%;
-    background-color: rgb(140, 255, 0);
+    background-color: rgb(124, 123, 123);
     height: 10%;
 }
 
 .css {
     width: 50%;
-    background-color: rgb(13, 255, 0);
+    background-color: rgb(124, 123, 123);
     height: 20%;
 }
 
 .js {
     width: 5%;
-    background-color: rgb(0, 255, 166);
+    background-color: rgb(124, 123, 123);
     height: 10%;
 }
 
@@ -136,35 +166,35 @@ h1 {
     height: 10%;
 }
 
-.skills > .box{
+.skills>.box {
     display: block;
 }
 
-.skills .box .text_1Box{
+.skills .box .text_1Box {
     overflow-y: auto;
 }
 
-.any-links-or-buttons > .box{
+.any-links-or-buttons>.box {
     border-radius: 0%;
 }
 
-.skills2 img{
+.skills2 img {
     max-width: 100px;
     height: auto;
 }
 
-#text_container{
+#text_container {
     display: flex;
     align-items: center;
     justify-content: left;
     font-size: 30px;
 }
 
-#image_container{
+#image_container {
     display: flex;
 }
 
-.skills2 > .box > .text_1Box {
+.skills2>.box>.text_1Box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,30 +203,30 @@ h1 {
 
 /* Style buttons */
 .btn {
-    background-color: rgb(42, 255, 95);
+    background-color: rgb(0, 0, 0);
     border: none;
     color: rgb(217, 248, 252);
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
     transition: 0.6765736578326587326578s;
-    width: 600px;
-    height: 50%;
+    width: 300px;
+    height: 100px;
     margin: 15px;
     padding: 4px;
     margin-top: 5%;
-  }
-  
-  /* Darker background on mouse-over */
-  .btn:hover {
-    background-color: rgb(38, 255, 0);
-  }
+}
 
-  .footer > .box {
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: rgb(124, 123, 123);
+}
+
+.footer>.box {
     border-radius: 0;
-  }
+}
 
-  @media  screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -214,11 +244,12 @@ h1 {
             "skills2 skills2"
             "footer footer";
     }
-      .any-links-or-buttons > .box{
-        flex-direction: column;
-      }
 
-      .btn{
+    .any-links-or-buttons>.box {
+        flex-direction: column;
+    }
+
+    .btn {
         text-align: center;
-      }
-  }
+    }
+}
