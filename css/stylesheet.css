@@ -184,10 +184,12 @@ h1 {
     border-radius: 0%;
 }
 
-.skills2 img {
-    max-width: 100px;
+#image_container img {
+    max-width: 150px;
     height: auto;
+    margin: 50px;
 }
+
 
 #text_container {
     display: flex;
@@ -198,6 +200,9 @@ h1 {
 
 #image_container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .skills2>.box>.text_1Box {
@@ -233,7 +238,6 @@ h1 {
 .footer>.box {
     border-radius: 0;
 }
-
 
 
 @media screen and (max-width: 420px) {
